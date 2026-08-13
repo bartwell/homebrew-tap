@@ -2,7 +2,7 @@ class Wender < Formula
   desc "Transfer files and directories between devices over WiFi"
   # The source repository is private; this is the public distribution point users can open.
   homepage "https://github.com/bartwell/wender-cli"
-  version "6.6.8"
+  version "6.6.9"
   # Free to use, closed source: not expressible as an SPDX identifier.
   license :cannot_represent
 
@@ -11,18 +11,18 @@ class Wender < Formula
   # Apple Silicon only: GitHub retired the Intel macOS runners, and an arm64 build cannot serve an
   # Intel Mac — Rosetta translates x86 to arm, not the reverse.
   on_macos do
-    url "https://github.com/bartwell/wender-cli/releases/download/v6.6.8/wender-6.6.8-macos-arm64.tar.gz"
-    sha256 "d9d9ab0172c66a0fe1361c8c299a21aef3d07a56a569227ff38f520fe280bed0"
+    url "https://github.com/bartwell/wender-cli/releases/download/v6.6.9/wender-6.6.9-macos-arm64.tar.gz"
+    sha256 "f942c0cfbd13e0adfbac7bd3f420c7667d985d92bf6c3f52f543e12d7ee0b8e2"
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/bartwell/wender-cli/releases/download/v6.6.8/wender-6.6.8-linux-arm64.tar.gz"
-      sha256 "dc1f840426d7fe87d2a90307ae3289919a2a8eacb283c63106534722b7c31536"
+      url "https://github.com/bartwell/wender-cli/releases/download/v6.6.9/wender-6.6.9-linux-arm64.tar.gz"
+      sha256 "0e3c0e47ee5bedd737b69dc73d11b2581facf2777865ed7c0408d3d2de62f7fa"
     end
     on_intel do
-      url "https://github.com/bartwell/wender-cli/releases/download/v6.6.8/wender-6.6.8-linux-x64.tar.gz"
-      sha256 "60ee50baae190f280e4517eec4ee6635debd3f4ef8bb127a122f3db34cc8cc6d"
+      url "https://github.com/bartwell/wender-cli/releases/download/v6.6.9/wender-6.6.9-linux-x64.tar.gz"
+      sha256 "4b3443be4b2826a566f615645b5027245d518c81580e0c5f73cac95ab6abc4ad"
     end
   end
 
